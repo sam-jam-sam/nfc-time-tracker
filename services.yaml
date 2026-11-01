@@ -1,0 +1,10 @@
+add_project:
+  name: Add project
+  description: Creates a project for NFC time tracking.
+  fields:
+    name:
+      name: Project name
+      description: The name to display for the new project.
+      required: true
+      selector:
+        text:
