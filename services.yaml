@@ -8,3 +8,38 @@ add_project:
       required: true
       selector:
         text:
+
+rename_project:
+  name: Rename project
+  description: Changes a project's display name without changing its history.
+  fields:
+    project_name:
+      name: Current project name
+      required: true
+      selector:
+        text:
+    new_name:
+      name: New project name
+      required: true
+      selector:
+        text:
+
+archive_project:
+  name: Archive project
+  description: Hides a project from active selection while preserving its history.
+  fields:
+    project_name:
+      name: Project name
+      required: true
+      selector:
+        text:
+
+restore_project:
+  name: Restore project
+  description: Makes an archived project active again.
+  fields:
+    project_name:
+      name: Project name
+      required: true
+      selector:
+        text:
